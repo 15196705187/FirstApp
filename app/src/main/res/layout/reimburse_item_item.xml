@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/reim_item_item_tv"
+    android:layout_marginRight="@dimen/login_margin"
+    android:text="2342"
+    android:textSize="@dimen/bite_size"
+    android:gravity="right|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" />
+</LinearLayout>

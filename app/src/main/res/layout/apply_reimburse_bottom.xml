@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="@color/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_marginRight="@dimen/login_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/bite_size"
+            android:text="合计金额："
+            android:textColor="#000000"
+            android:id="@+id/apply_reimburse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reimburse_total" />
+        <TextView
+            android:gravity="center"
+            android:text="1111"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/bite_size"
+            android:id="@+id/apply_reimburse_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reimburse_total" />
+        <TextView
+        android:layout_below="@id/apply_reimburse_tv"
+        android:background="@color/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="@dimen/bite_size"
+            android:id="@+id/apply_reimburse_tv_ss"
+            android:text="大写(金额)："
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:layout_below="@id/apply_reimburse_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reimburse_total" />
+        <TextView
+        android:layout_below="@id/apply_reimburse_tv_ss"
+        android:background="@color/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+        <EditText
+            android:gravity="left"
+            android:hint="请输入备注"
+            android:textSize="@dimen/bite_size"
+            android:id="@+id/reimburse_bottom_et_remark"
+            android:layout_below="@id/apply_reimburse_tv_ss"
+            android:background="@drawable/reim_editext"
+            android:layout_width="match_parent"
+            android:layout_height="90dp" />
+        <TextView
+            android:gravity="center_vertical"
+            android:text="11122"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/bite_size"
+            android:id="@+id/apply_reimburse_tv_big"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/apply_reimburse_tv_total"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/reimburse_total" />
+        <RelativeLayout
+            android:background="@drawable/mine_item_shape"
+            android:id="@+id/apply_reimburse_rl_attachment"
+            android:layout_below="@id/reimburse_bottom_et_remark"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="81dp">
+            <GridView
+                android:numColumns="4"
+                android:id="@+id/bottom_rcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </GridView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/apply_reimburse_tv_add"
+            android:gravity="center"
+            android:background="@drawable/bottom_add_one"
+            android:text="+ 增加一条"
+            android:textSize="@dimen/bite_size"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/apply_reimburse_rl_attachment"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+       <LinearLayout
+           android:layout_below="@id/apply_reimburse_tv_add"
+           android:id="@+id/apply_reimburse_ll_commit"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           android:layout_height="wrap_content">
+          <RelativeLayout
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:id="@+id/apply_reimburse_tv_save"
+                  android:textSize="@dimen/bite_size"
+                  android:gravity="center"
+                  android:background="@drawable/reimburse_bottom_shape"
+                  android:layout_marginTop="15dp"
+                  android:text="保  存"
+                  android:textColor="@color/withe"
+                  android:layout_width="100dp"
+                  android:layout_height="30dp" />
+          </RelativeLayout>
+          <RelativeLayout
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+              <TextView
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/apply_reimburse_tv_commit"
+                  android:textSize="@dimen/bite_size"
+                  android:gravity="center"
+                  android:layout_marginTop="15dp"
+                  android:background="@drawable/reimburse_bottom_shape"
+                  android:text="提  交"
+                  android:textColor="@color/withe"
+                  android:layout_width="100dp"
+                  android:layout_height="30dp" />
+          </RelativeLayout>
+       </LinearLayout>
+        <TextView
+            android:layout_below="@id/apply_reimburse_ll_commit"
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+</LinearLayout>

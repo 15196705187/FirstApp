@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="@drawable/mine_item_shape"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+   <RelativeLayout
+       android:layout_margin="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_centerVertical="true"
+           android:id="@+id/mine_item_add_tv_name"
+           android:text="姓名："
+           android:textSize="@dimen/bite_size"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <EditText
+           android:layout_marginLeft="10dp"
+           android:id="@+id/mine_item_add_et_name"
+           android:layout_centerVertical="true"
+           android:hint="请输入姓名"
+           android:background="@null"
+           android:textSize="@dimen/bite_size"
+           android:layout_toRightOf="@id/mine_item_add_tv_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mine_item_add_tv_department"
+            android:text="所在部门："
+            android:textSize="@dimen/bite_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mine_item_add_et_department"
+            android:layout_centerVertical="true"
+            android:hint="请输入部门"
+            android:background="@null"
+            android:textSize="@dimen/bite_size"
+            android:layout_toRightOf="@id/mine_item_add_tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mine_item_add_tv_use"
+            android:text="用途："
+            android:textSize="@dimen/bite_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mine_item_add_et_use"
+            android:layout_centerVertical="true"
+            android:hint="请输入用途"
+            android:background="@null"
+            android:textSize="@dimen/bite_size"
+            android:layout_toRightOf="@id/mine_item_add_tv_use"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mine_item_add_tv_leader"
+            android:text="审批领导："
+            android:textSize="@dimen/bite_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mine_item_add_et_leader"
+            android:layout_centerVertical="true"
+            android:hint="请输入审批经理"
+            android:background="@null"
+            android:textSize="@dimen/bite_size"
+            android:layout_toRightOf="@id/mine_item_add_tv_leader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mine_item_add_tv_much"
+            android:text="费用金额："
+            android:textSize="@dimen/bite_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mine_item_add_et_much"
+            android:layout_centerVertical="true"
+            android:hint="请输入金额"
+            android:background="@null"
+            android:textSize="@dimen/bite_size"
+            android:layout_toRightOf="@id/mine_item_add_tv_much"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/mine_item_add_tv_type"
+            android:text="费用类型："
+            android:textSize="@dimen/bite_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mine_item_add_spr_type"
+            android:layout_centerVertical="true"
+            android:hint="请输入部门"
+            android:background="@null"
+            android:textSize="@dimen/bite_size"
+            android:layout_toRightOf="@id/mine_item_add_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/mine_item_add_tv_confirm"
+        android:gravity="center"
+        android:background="@drawable/reimburse_bottom_shape"
+        android:text="确定"
+        android:textSize="@dimen/bite_size"
+        android:textColor="@color/withe"
+        android:layout_width="50dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:textSize="@dimen/bite_size"
+        android:background="@drawable/reimburse_bottom_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>

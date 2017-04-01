@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include
+    layout="@layout/head_title"
+    android:id="@+id/mine_head"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/mine_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+          <TextView
+              android:background="@drawable/home_item_shape"
+              android:gravity="center"
+              android:text="待提交"
+              android:textSize="@dimen/bite_size"
+              android:id="@+id/mine_tv_waite"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="match_parent" />
+            <TextView
+                android:background="@drawable/home_item_shape"
+                android:gravity="center"
+                android:text="审批中"
+                android:textSize="@dimen/bite_size"
+                android:id="@+id/mine_tv_reiming"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:background="@drawable/home_item_shape"
+                android:gravity="center"
+                android:text="通过"
+                android:textSize="@dimen/bite_size"
+                android:id="@+id/mine_tv_pass"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:background="@drawable/home_item_shape"
+                android:gravity="center"
+                android:textSize="@dimen/bite_size"
+                android:text="驳回"
+                android:id="@+id/mine_tv_back"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/mine_lv"
+            android:layout_below="@id/mine_ll"
+            android:layout_marginBottom="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:background="@drawable/home_item_shape"
+                android:id="@+id/mine_tv_add"
+                android:text="新增"
+                android:textSize="@dimen/bite_size"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/mine_tv_update"
+                android:text="修改"
+                android:textSize="@dimen/bite_size"
+                android:gravity="center"
+                android:background="@drawable/home_item_shape"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/mine_tv_delete"
+                android:text="删除"
+                android:background="@drawable/home_item_shape"
+                android:textSize="@dimen/bite_size"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/mine_tv_commit"
+                android:text="提交"
+                android:background="@drawable/home_item_shape"
+                android:textSize="@dimen/bite_size"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:background="@drawable/home_item_shape"
+                android:id="@+id/mine_tv_up"
+                android:text="上传"
+                android:textSize="@dimen/bite_size"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

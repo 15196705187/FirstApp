@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/login_background"
+        android:layout_height="3dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:id="@+id/reimburse_item_rl_government"
+           android:layout_marginLeft="@dimen/login_margin"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="0dp">
+           <TextView
+               android:layout_alignParentBottom="true"
+               android:background="@color/login_background"
+               android:layout_width="match_parent"
+               android:layout_height="1dp" />
+           <TextView
+               android:gravity="center"
+               android:id="@+id/reimburse_item_tv_government"
+               android:textColor="#000000"
+               android:textSize="@dimen/bite_size"
+               android:text="政府采购："
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/reimburse_item" />
+           <ImageView
+               android:background="@mipmap/reimburse01"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="@dimen/login_margin"
+               android:layout_width="15dp"
+               android:layout_height="15dp" />
+           <TextView
+               android:text="是否为政府采购"
+               android:textStyle="bold"
+               android:layout_marginRight="@dimen/reimburse_item"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reimburse_item_rl_budget"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_budget"
+                android:textSize="@dimen/bite_size"
+                android:text="预算事项："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <ImageView
+                android:background="@mipmap/reimburse01"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/login_margin"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="请选择预算事项"
+                android:textStyle="bold"
+                android:id="@+id/reimburse_item_spr_budget"
+                android:layout_marginRight="@dimen/reimburse_item"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reimburse_item_rl_detail"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_cost"
+                android:textSize="@dimen/bite_size"
+                android:text="费用明细："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <ImageView
+                android:background="@mipmap/reimburse01"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/login_margin"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="请选择费用明细"
+                android:textStyle="bold"
+                android:id="@+id/reim_item_spr_cost"
+                android:layout_marginRight="@dimen/reimburse_item"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/reimburse_item_rl_currency"
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_currency"
+                android:textSize="@dimen/bite_size"
+                android:text="币种："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <TextView
+                android:text="请选择币种"
+                android:textStyle="bold"
+                android:id="@+id/reimburse_item_spr_currency"
+                android:layout_marginRight="@dimen/reimburse_item"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:background="@mipmap/reimburse01"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/login_margin"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_much"
+                android:textSize="@dimen/bite_size"
+                android:text="金额："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <EditText
+                android:layout_marginRight="@dimen/login_margin"
+                android:gravity="right"
+                android:id="@+id/reimburse_item_et_much"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/reimburse_item_tv_much"
+                android:hint="请输入金额"
+                android:background="@null"
+                android:textSize="@dimen/bite_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_background"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_add_rotate"
+                android:textSize="@dimen/bite_size"
+                android:text="增值税率："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <EditText
+                android:id="@+id/reimburse_item_et_add_rotate"
+                android:hint="请输入税率"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/reimburse_item_tv_add_rotate"
+                android:layout_width="100dp"
+                android:background="@null"
+                android:textSize="@dimen/bite_size"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/item_mid"
+                android:layout_centerInParent="true"
+                android:layout_width="1dp"
+                android:background="@color/login_background"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_toRightOf="@id/item_mid"
+                android:id="@+id/reimburse_item_tv_add_tax"
+                android:text="增值税额："
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <EditText
+                android:id="@+id/reimburse_item_et_add_tax"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_toRightOf="@id/reimburse_item_tv_add_tax"
+                android:hint="请输入税额"
+                android:gravity="center"
+                android:textSize="@dimen/bite_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/login_margin"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/reimburse_item_tv_subtotal"
+                android:textSize="@dimen/bite_size"
+                android:text="小计金额："
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/reimburse_item" />
+            <TextView
+                android:id="@+id/reimburse_item_et_subtotal"
+                android:layout_marginRight="@dimen/login_margin"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/bite_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

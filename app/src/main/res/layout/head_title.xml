@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+<RelativeLayout
+    android:id="@+id/title_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:background="@mipmap/back01"
+        android:id="@+id/title_iv"
+        android:layout_marginLeft="@dimen/login_margin"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size" />
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_toRightOf="@id/title_iv"
+        android:layout_centerVertical="true"
+        android:textColor="#0c800c"
+        android:textSize="@dimen/center_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/title_tv_center"
+        android:textColor="#0c800c"
+        android:text="移动报销"
+        android:textSize="@dimen/center_size"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+   <RelativeLayout
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="@dimen/login_margin"
+       android:layout_centerVertical="true"
+       android:layout_width="30dp"
+       android:layout_height="30dp">
+       <ImageView
+           android:id="@+id/title_iv_right"
+           android:layout_width="30dp"
+           android:layout_height="30dp" />
+       <LinearLayout
+           android:id="@+id/title_ll"
+           android:visibility="gone"
+           android:layout_centerInParent="true"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:background="@drawable/login_shape"
+               android:layout_width="5dp"
+               android:layout_height="5dp" />
+           <TextView
+               android:layout_marginLeft="5dp"
+               android:layout_marginRight="5dp"
+               android:background="@drawable/login_shape"
+               android:layout_centerInParent="true"
+               android:layout_width="5dp"
+               android:layout_height="5dp" />
+           <TextView
+               android:background="@drawable/login_shape"
+               android:layout_width="5dp"
+               android:layout_height="5dp" />
+       </LinearLayout>
+   </RelativeLayout>
+</RelativeLayout>

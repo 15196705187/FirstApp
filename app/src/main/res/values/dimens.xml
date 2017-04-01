@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_margin">25dp</dimen>
+    <dimen name="big_size">30sp</dimen>
+    <dimen name="center_size">20sp</dimen>
+    <dimen name="little_size">20sp</dimen>
+    <dimen name="bite_size">15sp</dimen>
+    <dimen name="image_size">30dp</dimen>
+    <dimen name="login_photo">15dp</dimen>
+    <dimen name="login_remember">20dp</dimen>
+    <dimen name="mine_margin">7dp</dimen>
+    <dimen name="reimburse_margin">10dp</dimen>
+    <dimen name="reimburse_item">50dp</dimen>
+    <dimen name="reimburse_total">40dp</dimen>
+</resources>
